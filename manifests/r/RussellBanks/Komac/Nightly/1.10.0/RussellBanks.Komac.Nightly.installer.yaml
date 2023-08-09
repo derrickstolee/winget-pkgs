@@ -1,0 +1,27 @@
+# Created with Komac v1.9.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.4.0.schema.json
+
+PackageIdentifier: RussellBanks.Komac.Nightly
+PackageVersion: 1.10.0
+InstallerLocale: en-US
+InstallerType: burn
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+Commands:
+- komac
+ProductCode: '{BA24ADB7-FE52-376E-9768-D82F1C7AE189}'
+ReleaseDate: 2023-08-08
+Installers:
+- Architecture: x64
+  Scope: user
+  InstallerUrl: https://github.com/russellbanks/Komac/releases/download/nightly/KomacUserSetup-nightly.exe
+  InstallerSha256: FA47BC3EFD7A739DF1DF5DFE4804171E3D5C4AF41BC75F5270CF084716C0C740
+- Architecture: x64
+  Scope: machine
+  InstallerUrl: https://github.com/russellbanks/Komac/releases/download/nightly/KomacMachineSetup-nightly.exe
+  InstallerSha256: 08E2143123B681722B54593E3FE31EEC8C7F3CDBCF19D2810D7D99E18004980A
+ManifestType: installer
+ManifestVersion: 1.4.0
